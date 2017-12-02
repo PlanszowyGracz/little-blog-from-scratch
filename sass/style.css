@@ -15,6 +15,9 @@ body, html {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between; }
+  @media all and (max-width: 750px) {
+    .container-header {
+      flex-flow: column wrap; } }
   .container-header .logo-container {
     margin: 10px 50px 10px 10px;
     height: 80px;
@@ -35,11 +38,7 @@ body, html {
       padding: 5px 20px;
       background-color: #887590; }
       .container-header .logo-container .logo-text h1 {
-        line-height: 40%;
-        font-size: 2em; }
-      .container-header .logo-container .logo-text h2 {
-        line-height: 30%; }
-      .container-header .logo-container .logo-text h1, .container-header .logo-container .logo-text h2 {
+        font-family: 'Source Code Pro', monospace;
         vertical-align: top;
         text-align: center;
         color: #000; }
@@ -63,11 +62,12 @@ body, html {
           text-decoration: none;
           display: block;
           background-color: #887590;
-          border: 2px solid black;
-          color: white;
+          border: 2px solid #000;
+          color: #000;
           padding: 0 8px;
           margin: 0 5px;
           height: 40px;
-          line-height: 40px; }
+          line-height: 40px;
+          font-family: 'Orbitron', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
