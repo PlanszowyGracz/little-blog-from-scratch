@@ -9,7 +9,7 @@
   $all2=implode(' | ', $all);
   //var_dump($all);
   //echo $all2;
-
+//TODO: make redirecting and  better path to resources
 //TODO: Better Controler handling. Think more about best way to implement.
 include 'controller/ControlerCreate1.php';
 

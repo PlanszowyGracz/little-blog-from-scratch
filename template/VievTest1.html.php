@@ -40,6 +40,6 @@ $footer_get();
 
 ?>
 </div>
-
+<script src="scripts/showHideHeaderMenuInMobile.js"></script>
 </body>
 </html>

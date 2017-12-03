@@ -28,7 +28,7 @@ function addMobileClass($num)
         <?php if ($i === 1) : ?>
             <span id="main-navigation-mobile-open"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></span>
         <?php endif; ?>
-        <div class="main-navigation-container<?php addMobileClass($i); ?>">
+        <div class="main-navigation-container<?php addMobileClass($i); ?>"  <?php if($i === 1) echo "id=\"menu-mobile\"" ?>>
             <?php if ($i === 1) : ?>
                 <span id="main-navigation-mobile-close"><i class="fa fa-times fa-3x" aria-hidden="true"></i></span>
             <?php endif; ?>

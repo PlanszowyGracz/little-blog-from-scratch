@@ -28,7 +28,7 @@ class RenderView1
         $this->mainViewSkeleton=$mainViewSkeleton;
     }
 
-    public function loadModeltoRenderView($model){
+    public function loadDataToRenderView($model){
          $this->model=$model;
     }
 
