@@ -1,8 +1,9 @@
 @import "../global";
 //TODO: height header change for variable and variable for all thing depends on this, think if possible without destorying design
 //TODO:: THREE LIne in linear gradient, think what shadow of purple use
-//TODO::svn logo make
-//TODO:: Mobile---Need rethink idea
+//TODO::svn logo make, and integrate here
+//TODO:: Mobile -add js
+//TODO: rethink how tablet show header
 
 .container-header {
   width: 100%;
@@ -14,17 +15,30 @@
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  @mixin centerHeader() {
-    margin: 10px 50px 10px 10px;
+  @mixin centerHeaderElement() {
+    margin: 10px 20px 10px 10px;
     height: 80px;
     border: 5px solid $dark-purple;
     padding: 15px;
 
   }
+  @mixin button-style() {
+    text-decoration: none;
+    display: block;
+    background-color: $gray-purple;
+    border: 2px solid #000;
+    color: #000;
+    padding: 0 8px;
+    margin: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Orbitron', sans-serif;
+
+  }
 
   .logo-container {
 
-    @include centerHeader();
+    @include centerHeaderElement();
 
     position: relative;
     .logo-img, .logo-text {
@@ -60,11 +74,7 @@
 
   .main-navigation-container {
 
-    @include centerHeader();
-
-    @media all and (max-width: 750px) {
-      display: none;
-    }
+    @include centerHeaderElement();
 
     .main-navigation-list {
 
@@ -94,24 +104,84 @@
     }
   }
 
-  @media all and (max-width: 750px) {
-   ///TODO:centering text and logo and container
-    //TODO:change to block those element, inline on mobile dont look good
-    //TODO:
+  .main-navigation-container--mobile, #main-navigation-mobile-open {
+    display: none;
+  }
+
+  @media all and (max-width: 1120px) {
+    box-shadow: 0 15px 0 0 $gray-purple;
+
     .logo-container {
-      padding:2px;
+      margin: 5px auto;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      width: 80%;
+
       .logo-img, .logo-text {
         height: 50px;
+
+        margin: 2px auto;
       }
 
       .logo-img {
+        display: block;
         width: 100px;
       }
       .logo-text {
+        display: block;
         padding: 2px;
 
         h1 {
-          font-size: 1.2em;
+          font-size: 1.4em;
+          font-weight: bold;
+        }
+      }
+    }
+    .main-navigation-container {
+      display: none;
+    }
+    #main-navigation-mobile-open {
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      border: 2px solid #FFF;
+      border-radius: 5px;
+      color: #FFF;
+      background-color: $light-purple;
+      padding: 5px;
+    }
+
+    .main-navigation-container--mobile {
+      display: block;
+      position: fixed;
+      right: 0;
+      height: 100%;
+      width: 60%;
+      padding-top: 10px;
+      background-color: $dark-purple;
+      border-left: 2px solid #000;
+      #main-navigation-mobile-close {
+        text-align: center;
+        display: block;
+        color: #FFF;
+
+      }
+      .main-navigation-list--mobile {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        .main-navigation-list__el--mobile {
+          display: block;
+
+          .main-navigation-list__el__link--mobile {
+            @include button-style();
+
+          }
+
         }
       }
     }
