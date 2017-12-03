@@ -2,6 +2,11 @@ $dark-purple: #3b0f40;
 $gray-purple: #887590;
 $light-purple: #7d4290;
 $purple: #7910c1;
+$button-font:'Jura', sans-serif;
+$occasional-font:'Orbitron', sans-serif;;
+$p-font:'Orbitron', sans-serif;
+$h-font: 'Text Me One', sans-serif;
+
 
 body, html {
   margin: 0;
@@ -12,12 +17,24 @@ body, html {
 
 .container-main {
   background-color: $gray-purple;
-  display:flex;
-  height: 100vh;
+  display: flex;
+  min-height: 100vh;
   flex-direction: column;
+
 }
 
 * {
   //box-sizing: border-box;
   // border:2px solid black;
+}
+
+p{
+  font-family: $p-font;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $h-font;
+}
+button,a{
+  font-family: $button-font;
+  font-weight: bold;
 }

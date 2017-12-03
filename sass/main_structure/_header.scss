@@ -14,7 +14,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  flex: 0 1 100px;
+
 
   @mixin centerHeaderElement() {
     margin: 10px 20px 10px 10px;
@@ -33,7 +33,7 @@
     margin: 0 5px;
     height: 40px;
     line-height: 40px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: $button-font;
 
   }
 
@@ -62,7 +62,6 @@
       background-color: $gray-purple;
 
       h1 {
-        font-family: 'Source Code Pro', monospace;
 
         vertical-align: top;
         text-align: center;
@@ -98,7 +97,7 @@
           margin: 0 5px;
           height: 40px;
           line-height: 40px;
-          font-family: 'Orbitron', sans-serif;
+
 
         }
       }

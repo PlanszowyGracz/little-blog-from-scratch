@@ -9,10 +9,12 @@
     <link rel="stylesheet" type="text/css" href="sass/style.css"  />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style></style>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
     <?php
 
-    //TODO: Decide if you still want using bulma, or not; Eventualny find css framework focused only on layout positioning.
+
     $script_get();
     $css_get();
     ?>
