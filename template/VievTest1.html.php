@@ -28,7 +28,7 @@
 </head>
 <body>
 <?php
-echo "<h2> {$data[1]} </h2>";
+//echo "<h2> {$data[1]} </h2>";
 $header_get();
 $content_get();
 $footer_get();

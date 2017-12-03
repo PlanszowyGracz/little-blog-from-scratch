@@ -15,26 +15,21 @@ body, html {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between; }
-  @media all and (max-width: 750px) {
-    .container-header {
-      flex-flow: column wrap; } }
   .container-header .logo-container {
     margin: 10px 50px 10px 10px;
     height: 80px;
     border: 5px solid #3b0f40;
     padding: 15px;
     position: relative; }
-    .container-header .logo-container .logo-img {
+    .container-header .logo-container .logo-img, .container-header .logo-container .logo-text {
       vertical-align: top;
       display: inline-block;
-      height: 85px;
-      width: 180px;
+      height: 85px; }
+    .container-header .logo-container .logo-img {
+      width: 170px;
       background-color: #000; }
     .container-header .logo-container .logo-text {
       box-sizing: border-box;
-      vertical-align: top;
-      display: inline-block;
-      height: 85px;
       padding: 5px 20px;
       background-color: #887590; }
       .container-header .logo-container .logo-text h1 {
@@ -69,5 +64,16 @@ body, html {
           height: 40px;
           line-height: 40px;
           font-family: 'Orbitron', sans-serif; }
+  @media all and (max-width: 750px) {
+    .container-header .logo-container {
+      padding: 2px; }
+      .container-header .logo-container .logo-img, .container-header .logo-container .logo-text {
+        height: 50px; }
+      .container-header .logo-container .logo-img {
+        width: 100px; }
+      .container-header .logo-container .logo-text {
+        padding: 2px; }
+        .container-header .logo-container .logo-text h1 {
+          font-size: 1.2em; } }
 
 /*# sourceMappingURL=style.css.map */

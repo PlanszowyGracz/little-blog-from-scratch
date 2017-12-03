@@ -34,7 +34,7 @@ class RenderView1
 
     public function startView()
     {
-        var_dump($this->model);
+
         $data=isset($this->model)? $this->model: [' Testowy1Model1 ',' Testowy2Model2 '];
         $this->viewClass->loadDataToView($data);
         $header_get = function () {$this->viewClass->header_get();};

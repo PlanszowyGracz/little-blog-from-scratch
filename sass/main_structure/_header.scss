@@ -13,54 +13,45 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  @media all and (max-width: 750px) {
-    flex-flow: column wrap;
 
-
-  }
-
-  @mixin centerHeader(){
-    margin:10px 50px 10px 10px;
-    height:80px;
+  @mixin centerHeader() {
+    margin: 10px 50px 10px 10px;
+    height: 80px;
     border: 5px solid $dark-purple;
-    padding:15px;
-
+    padding: 15px;
 
   }
 
-  .logo-container{
+  .logo-container {
 
     @include centerHeader();
 
-    position:relative;
-
-    .logo-img{
-      vertical-align:top  ;
-      display:inline-block;
+    position: relative;
+    .logo-img, .logo-text {
+      vertical-align: top;
+      display: inline-block;
       height: 85px;
-      width:180px;
+    }
+
+    .logo-img {
+
+      width: 170px;
       background-color: #000;
 
-
-
     }
-    .logo-text{
+    .logo-text {
       box-sizing: border-box;
-      vertical-align:top  ;
-      display: inline-block;
 
-      height: 85px;
-      padding:5px 20px ;
+      padding: 5px 20px;
       //box-sizing: border-box;
       background-color: $gray-purple;
 
-      h1{
+      h1 {
         font-family: 'Source Code Pro', monospace;
 
         vertical-align: top;
         text-align: center;
-        color:#000;
-
+        color: #000;
 
       }
     }
@@ -72,45 +63,58 @@
     @include centerHeader();
 
     @media all and (max-width: 750px) {
-     display:none;
+      display: none;
     }
-
-
-
 
     .main-navigation-list {
 
       list-style-type: none;
-      margin:0;
+      margin: 0;
       padding: 0;
-      display:block;
+      display: block;
       vertical-align: middle;
 
-
-
-
       .main-navigation-list__el {
-        display:inline-block;
-
-
+        display: inline-block;
 
         .main-navigation-list__el__link {
           text-decoration: none;
-          display:block;
+          display: block;
           background-color: $gray-purple;
           border: 2px solid #000;
-          color:#000;
-          padding:0 8px;
-          margin:0 5px;
+          color: #000;
+          padding: 0 8px;
+          margin: 0 5px;
           height: 40px;
           line-height: 40px;
           font-family: 'Orbitron', sans-serif;
 
-
-
-
         }
       }
     }
+  }
+
+  @media all and (max-width: 750px) {
+   ///TODO:centering text and logo and container
+    //TODO:change to block those element, inline on mobile dont look good
+    //TODO:
+    .logo-container {
+      padding:2px;
+      .logo-img, .logo-text {
+        height: 50px;
+      }
+
+      .logo-img {
+        width: 100px;
+      }
+      .logo-text {
+        padding: 2px;
+
+        h1 {
+          font-size: 1.2em;
+        }
+      }
+    }
+
   }
 }

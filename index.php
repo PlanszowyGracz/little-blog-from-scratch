@@ -1,14 +1,14 @@
 <?php
 
 
-  echo " test ";
+ // echo " test ";
   $uri = $_SERVER["REQUEST_URI"];
-  echo $uri;
-  var_dump($uri);
+ // echo $uri;
+ // var_dump($uri);
   $all= explode('/',$uri);
   $all2=implode(' | ', $all);
-  var_dump($all);
-  echo $all2;
+  //var_dump($all);
+  //echo $all2;
 
 //TODO: Better Controler handling. Think more about best way to implement.
 include 'controller/ControlerCreate1.php';

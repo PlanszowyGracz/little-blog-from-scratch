@@ -44,7 +44,7 @@ class CreateView1 implements InterfaceView
 
     public function header_get()
     {   $data=$this->dataModel;
-        echo "Witam";
+       
         include 'template\header.html.php';
     }
 
