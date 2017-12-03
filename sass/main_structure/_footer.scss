@@ -1,0 +1,16 @@
+@import "../global";
+
+.container-footer {
+
+  width: 100%;
+
+  background: $light-purple;
+  border-top: 2px solid $dark-purple;
+  flex: 0 1 20px;
+
+  span {
+    padding: 2px;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+  }
+}

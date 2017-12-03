@@ -56,7 +56,7 @@ class CreateView1 implements InterfaceView
     public function footer_get()
     {   $data=$this->dataModel;
 
-        echo 'Żegnam <br>';
+        include 'template\footer.html.php';
     }
 
 
