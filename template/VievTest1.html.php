@@ -34,7 +34,9 @@
 <?php
 //echo "<h2> {$data[1]} </h2>";
 $header_get();
+echo '<div class="container-content" >';
 $content_get();
+echo '</div>';
 $footer_get();
 
 

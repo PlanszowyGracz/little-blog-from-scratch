@@ -2,16 +2,15 @@ $dark-purple: #3b0f40;
 $gray-purple: #887590;
 $light-purple: #7d4290;
 $purple: #7910c1;
-$button-font:'Jura', sans-serif;
-$occasional-font:'Orbitron', sans-serif;;
-$p-font:'Orbitron', sans-serif;
+$button-font: 'Jura', sans-serif;
+$occasional-font: 'Orbitron', sans-serif;
+;
+$p-font: 'Orbitron', sans-serif;
 $h-font: 'Text Me One', sans-serif;
-
 
 body, html {
   margin: 0;
   padding: 0;
-
 
 }
 
@@ -23,18 +22,37 @@ body, html {
 
 }
 
+.container-content {
+  margin: 0 75px;
+  padding: 10px;
+  border-left: 5px solid $dark-purple;
+  border-right: 5px solid $dark-purple;
+
+  flex: 1;
+  // height: 100%;
+
+  @media all and (max-width: 1120px) {
+    //margin:30px 10px 0 10px;
+    width: 85%;
+    margin: 30px auto 0 auto;
+  }
+
+}
+
 * {
   //box-sizing: border-box;
   // border:2px solid black;
 }
 
-p{
+p {
   font-family: $p-font;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1, h2, h3, h4, h5, h6 {
   font-family: $h-font;
 }
-button,a{
+
+button, a {
   font-family: $button-font;
   font-weight: bold;
 }

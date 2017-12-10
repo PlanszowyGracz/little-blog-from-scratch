@@ -44,18 +44,19 @@ class CreateView2 implements InterfaceView
 
     public function header_get()
     {   $data=$this->dataModel;
-        //echo "Witam2";
+
+        include 'template\header.html.php';
     }
 
     public function content_get()
     {    $data=$this->dataModel;
-        //include 'template\ContentTest2.html.php';
+        include 'template\ContentTest2.html.php';
     }
 
     public function footer_get()
     {   $data=$this->dataModel;
 
-       // echo 'Żegnam2 <br>';
+        include 'template\footer.html.php';
     }
 
 

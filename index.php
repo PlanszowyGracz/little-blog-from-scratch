@@ -14,5 +14,5 @@
 include 'controller/ControlerCreate1.php';
 
 $testControl=new ControlerCreate1();
-$testControl->renderSelectedView('CreateView1');
+$testControl->renderSelectedView('CreateView2');
 
