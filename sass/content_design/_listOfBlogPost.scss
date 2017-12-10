@@ -1,3 +1,42 @@
+@import "../global";
 .list-blog-post-container{
 
+
+
+  .list-blog-post--flexbox{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    margin: 0;
+
+
+    .list-blog-post--flexbox--onebox{
+       flex:1 0 400px;
+       background-color:  $light-purple;
+       margin:20px;
+       padding:0;
+       text-align: center;
+
+
+
+    }
+    .list-blog-post--flexbox--onebox--strap,.list-blog-post--flexbox--onebox--strap__bottom{
+      background-color: $dark-purple;
+      margin:0;
+      display:flex;
+      flex-flow:row wrap;
+      justify-content: space-around;
+      span{
+        display:inline-block;
+        padding:5px;
+        font-family: $h-font;
+        color:$light-purple;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+
+  }
 }

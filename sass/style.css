@@ -13,7 +13,9 @@ body, html {
   padding: 10px;
   border-left: 5px solid #3b0f40;
   border-right: 5px solid #3b0f40;
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
   @media all and (max-width: 1120px) {
     .container-content {
       width: 85%;
@@ -23,7 +25,8 @@ p {
   font-family: "Orbitron", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Text Me One", sans-serif; }
+  font-family: "Text Me One", sans-serif;
+  margin: 0; }
 
 button, a {
   font-family: "Jura", sans-serif;
@@ -44,7 +47,9 @@ body, html {
   padding: 10px;
   border-left: 5px solid #3b0f40;
   border-right: 5px solid #3b0f40;
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
   @media all and (max-width: 1120px) {
     .container-content {
       width: 85%;
@@ -54,7 +59,8 @@ p {
   font-family: "Orbitron", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Text Me One", sans-serif; }
+  font-family: "Text Me One", sans-serif;
+  margin: 0; }
 
 button, a {
   font-family: "Jura", sans-serif;
@@ -68,7 +74,8 @@ button, a {
   box-shadow: 0 30px 0 0 #887590;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 20px; }
   .container-header .logo-container {
     margin: 10px 20px 10px 10px;
     height: 80px;
@@ -194,7 +201,9 @@ body, html {
   padding: 10px;
   border-left: 5px solid #3b0f40;
   border-right: 5px solid #3b0f40;
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
   @media all and (max-width: 1120px) {
     .container-content {
       width: 85%;
@@ -204,7 +213,8 @@ p {
   font-family: "Orbitron", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Text Me One", sans-serif; }
+  font-family: "Text Me One", sans-serif;
+  margin: 0; }
 
 button, a {
   font-family: "Jura", sans-serif;
@@ -235,7 +245,9 @@ body, html {
   padding: 10px;
   border-left: 5px solid #3b0f40;
   border-right: 5px solid #3b0f40;
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
   @media all and (max-width: 1120px) {
     .container-content {
       width: 85%;
@@ -245,25 +257,102 @@ p {
   font-family: "Orbitron", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Text Me One", sans-serif; }
+  font-family: "Text Me One", sans-serif;
+  margin: 0; }
 
 button, a {
   font-family: "Jura", sans-serif;
   font-weight: bold; }
 
-.blog-post-container p {
-  padding: 10px; }
-.blog-post-container h1, .blog-post-container h2 {
-  text-align: center; }
-.blog-post-container .blog-post--info {
+.blog-post-container {
+  background-color: #7d4290;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  flex: 1; }
+  .blog-post-container p {
+    padding: 10px;
+    display: block; }
+  .blog-post-container h2 {
+    background-color: #3b0f40;
+    padding: 5px;
+    color: #7d4290;
+    font-size: 2rem;
+    text-align: center; }
+  .blog-post-container .blog-post--info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .blog-post-container .blog-post--info span {
+      display: inline-block;
+      text-align: center;
+      margin: 3px;
+      padding: 3px 10px;
+      border-top: 2px dashed #000;
+      font-family: "Text Me One", sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem; }
+
+body, html {
+  margin: 0;
+  padding: 0; }
+
+.container-main {
+  background-color: #887590;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.container-content {
+  margin: 0 75px;
+  padding: 10px;
+  border-left: 5px solid #3b0f40;
+  border-right: 5px solid #3b0f40;
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+  @media all and (max-width: 1120px) {
+    .container-content {
+      width: 85%;
+      margin: 30px auto 0 auto; } }
+
+p {
+  font-family: "Orbitron", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Text Me One", sans-serif;
+  margin: 0; }
+
+button, a {
+  font-family: "Jura", sans-serif;
+  font-weight: bold; }
+
+.list-blog-post-container .list-blog-post--flexbox {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
-  .blog-post-container .blog-post--info span {
-    display: inline-block;
-    text-align: center;
-    margin: 3px;
-    padding: 3px 10px;
-    border-top: 2px dashed #000; }
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  margin: 0; }
+  .list-blog-post-container .list-blog-post--flexbox .list-blog-post--flexbox--onebox {
+    flex: 1 0 400px;
+    background-color: #7d4290;
+    margin: 20px;
+    padding: 0;
+    text-align: center; }
+  .list-blog-post-container .list-blog-post--flexbox .list-blog-post--flexbox--onebox--strap, .list-blog-post-container .list-blog-post--flexbox .list-blog-post--flexbox--onebox--strap__bottom {
+    background-color: #3b0f40;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .list-blog-post-container .list-blog-post--flexbox .list-blog-post--flexbox--onebox--strap span, .list-blog-post-container .list-blog-post--flexbox .list-blog-post--flexbox--onebox--strap__bottom span {
+      display: inline-block;
+      padding: 5px;
+      font-family: "Text Me One", sans-serif;
+      color: #7d4290;
+      font-weight: bold;
+      font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */

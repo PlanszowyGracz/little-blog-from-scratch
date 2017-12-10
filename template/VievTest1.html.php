@@ -33,6 +33,7 @@
 <div class="container-main">
 <?php
 //echo "<h2> {$data[1]} </h2>";
+
 $header_get();
 echo '<div class="container-content" >';
 $content_get();
@@ -45,3 +46,10 @@ $footer_get();
 <script src="scripts/showHideHeaderMenuInMobile.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+

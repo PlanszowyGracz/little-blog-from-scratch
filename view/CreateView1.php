@@ -60,4 +60,8 @@ class CreateView1 implements InterfaceView
     }
 
 
+    public function content_get_without_centering()
+    {
+        // TODO: Implement content_get_without_centering() method.
+    }
 }

@@ -1,16 +1,32 @@
 @import "../global";
 
 .blog-post-container {
+  background-color:  $light-purple;
+  //margin:20px 0 0 0;
+  height: 100%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  flex:1;
+
 
 
   p{
    padding:10px;
+
+    display:block;
+
   }
-  h1,h2{
-
-
+  h2{
+    background-color:$dark-purple;
+    padding:5px;
+    color:$light-purple;
+    font-size: 2rem;
     text-align: center;
   }
+
+
+
   .blog-post--info{
     display:flex;
     flex-flow: row wrap;
@@ -24,7 +40,9 @@
       margin: 3px;
       padding: 3px 10px;
       border-top:2px dashed #000;
-
+      font-family: $h-font;
+      font-weight: bold;
+      font-size: 1.2rem;
     }
 
   }

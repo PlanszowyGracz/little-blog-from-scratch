@@ -37,6 +37,7 @@ class RenderView1
 
         $data=isset($this->model)? $this->model: [' Testowy1Model1 ',' Testowy2Model2 '];
         $this->viewClass->loadDataToView($data);
+        //TODO: add $conten_get_without_centering
         $header_get = function () {$this->viewClass->header_get();};
         $content_get = function () {$this->viewClass->content_get();};
         $footer_get =function () { $this->viewClass->footer_get();};

@@ -8,6 +8,7 @@ interface InterfaceView
     public function header_get();
 
     public function content_get();
+    public function content_get_without_centering();
 
     public function footer_get();
 
